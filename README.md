@@ -43,14 +43,14 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-I found it challenging to debug my errors since I am very unfamiliar with
-XCode's settings and Swift. But most of my bugs consisted of objects still
-linked with actions or functions that were deleted resulting in many runtime
-errors.
+I found it challenging to debug my errors since I was very unfamiliar with
+XCode's layout and Swift in general. But most of my bugs consisted of objects
+still linked with actions or functions that were deleted resulting in many 
+runtime errors and NSExceptions
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2016 Cody Doan
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

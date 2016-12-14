@@ -32,11 +32,15 @@ class ViewController: UIViewController {
     var percent : Double = 0
     let step : Float = 0.01
     var location : CGFloat = 0
+    var color : UIColor = UIColor.white
+    var BGColor : UIColor = UIColor.white
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Tipper"
         location = visualView.center.y
+        color = (self.navigationController?.navigationBar.tintColor)!
+        BGColor = (self.view.backgroundColor)!
         visualView.center.y = self.view.frame.height + 1000
     }
 
@@ -50,11 +54,15 @@ class ViewController: UIViewController {
             tipLabelTitle.textColor = UIColor.white
             totalLabelTitle.textColor = UIColor.white
             pplStepper.tintColor = UIColor.white
+            self.navigationController?.navigationBar.tintColor = UIColor.black
+            self.view.backgroundColor = UIColor.darkGray
         } else {
             blurView.effect = UIBlurEffect(style: .light)
             tipLabelTitle.textColor = UIColor.black
             totalLabelTitle.textColor = UIColor.black
             pplStepper.tintColor = UIColor.black
+            self.navigationController?.navigationBar.tintColor = color
+            self.view.backgroundColor = BGColor
         }
     }
 
